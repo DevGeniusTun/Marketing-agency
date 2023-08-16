@@ -141,7 +141,7 @@
 
     .navbar-logo {
         position: absolute;
-        top: -90%;
+        top: -84%;
         left: 40%;
 
     }
@@ -238,10 +238,14 @@
 
     .navbar-main-container.active,
     .navbarServ-main-container.active {
-        background-color: transparent;
+        background-color: #1F1A19;
     }
 }
-
+@media screen and (max-width: 600px) {
+    .navbar-logo {
+        display: none;
+    }
+}
 
 /* small screens */
 @media screen and (max-width: 560px) {
@@ -256,13 +260,6 @@
         text-align: center;
     }
 
-
-    .navbar-logo {
-        position: absolute;
-        top: -60px;
-        left: 40%;
-
-    }
 }
 
 @media screen and (max-width: 420px) {
