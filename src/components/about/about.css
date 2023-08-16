@@ -70,7 +70,6 @@
 @media (max-width: 960px) {
     /* Adjust styles for screens below 960px width */
   
-    /* Example: Change font size */
     .grid-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* Two columns */
