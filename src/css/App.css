@@ -4,17 +4,17 @@
 body,
 html {
     font-family: "Raleway";
-    color: white;
-    background-color: #1F1A19;
+  
     height: 100%;
     width: 100vw;
     margin: 0;  
+    padding: 0;
     letter-spacing: 0.1rem;
 }
 
-* {
+/* * {
     box-sizing: border-box;
-}
+} */
 .App {
     display: grid;
 }
