@@ -4,19 +4,27 @@ import { BrowserRouter as Router ,
    import Home from "./components/home/Home";
    import About from './components/about/About';
    import Navbar from './components/navbar/Navbar';
+   import Services from './components/services/Services';
+
 function App() {
   return (
     <Router>
     <div className="App">
       <Navbar />
-    <Switch>
+
+      <Home/>
+    {/* <Switch>
+
       <Route  path='/home'>
         <Home />
       </Route>
       <Route path='/about'>
         <About />
       </Route>
-    </Switch>
+      <Route path='/services'>
+        <Services/>
+      </Route>
+    </Switch> */}
     </div>
     </Router>
   );
