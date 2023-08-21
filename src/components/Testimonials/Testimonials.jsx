@@ -1,3 +1,4 @@
+
 import React , {useState} from "react";
 import "./testimonials.css";
 import {TestimonialsData} from "./Data";
@@ -64,6 +65,14 @@ export default Testimonials;
 
 
                {/* <svg
+
+import React from "react";
+import "./testimonials.css";
+const Testimonials = () => {
+  return (
+    <div className="testimonials-container">
+      <svg
+
         className="testimonials-svg"
         xmlns="http://www.w3.org/2000/svg"
         width="100%"
@@ -77,4 +86,8 @@ export default Testimonials;
           stroke-width="3"
           stroke-dasharray="30 30"
         />
+
       </svg> */}
+
+      
+

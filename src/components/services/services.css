@@ -10,11 +10,33 @@
     margin-top: 30px;
 }
 
+
 .Home-sections-title{
     font-size: 45px;
     position: relative;
     display: inline-block;
     text-align: center;
+
+
+.btnS{
+    font-family: 'Raleway';
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size:35px;
+    border-radius: 500px;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+   
+    white-space: normal;
+    font-weight: 900;
+    text-align: center;
+    color: #fff;
+    background-color: #c71818;
+   
+    padding: 10px 20px 10px 20px;
+    margin-left: 1%;
+
 }
 
 
