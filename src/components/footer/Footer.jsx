@@ -5,7 +5,7 @@ import { FaInstagram, FaEnvelope, FaFacebook } from 'react-icons/fa';
 const Footer = () => {
   return (
     <>
-    <div class="footer-basic">
+    <div className="footer-basic wave wave--top">
         <footer>
             <ul>
                 <li><a href="#">Home</a></li>

@@ -19,7 +19,7 @@ const About = () => {
         It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially,
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
         when an unknown printer took . </p>
-        <button className='btn'>Start Here</button>
+     
     </div>
 
     <div className="section s3">
@@ -31,7 +31,7 @@ const About = () => {
         It has survived <strong>not only five centuries,</strong> but also the leap into electronic typesetting, remaining essentially,
         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
         when an <strong>unknown printer took</strong> a galley of type and scrambled it to make . </p>
-        <button className='btn'>Start Here</button>
+       
     </div>
 
     <div className="section s4">
