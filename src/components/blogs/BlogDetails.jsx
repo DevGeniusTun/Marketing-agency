@@ -14,9 +14,11 @@ function BlogDetail() {
   return (
     <>    
     <div className='blogDetail'>
+      <div className='blogD'>
       <img src={blog.image} alt={blog.title} className='blogDImage'/>
       <h1 className='blogDTitle'>{blog.title}</h1>
       <p className='blogDDescription'>{blog.description}</p>
+      </div>
     </div>
     </>
   );
