@@ -13,12 +13,13 @@ transform: translate(0);
 
 form { 
     /* max-width:420px;  */
-    margin:50px auto; 
+    margin:30px auto; 
     display: block;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 30vw;
+    width: 38vw;
+   
 }
 .contact-title {
   text-align: center;
@@ -30,13 +31,14 @@ form {
   font-family: 'Raleway';
   font-weight:500;
   font-size: 18px;
-  border-radius: 5px;
+  border-radius: 0px;
   line-height: 22px;
   background-color: transparent;
-  border:2px solid #2a2a2b86;
+  border: none;
+  border-bottom:1px solid #2a2a2b66;
   transition: all 0.3s;
-  padding: 10px;
-  margin-bottom: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
   width:80%;
   box-sizing: border-box;
   outline:0;
@@ -69,7 +71,9 @@ textarea {
     background-color: #0985ea;
     padding: 10px 50px 10px 50px;
   
-    box-shadow: rgba(0, 0, 0, 0.176) 0px 16px 48px 0px
+    box-shadow: rgba(0, 0, 0, 0.176) 0px 16px 48px 0px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 .submit:hover { background:#000000; }
 .contactT{
