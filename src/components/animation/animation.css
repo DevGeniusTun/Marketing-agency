@@ -2,19 +2,6 @@
     --transition: all 1s;
   }
   
-
-  
-  
- 
-  
-  /* class added to header on first scroll */
-  .header-slide-in {
-    transform: translate(0);
-    opacity: 1;
-  }
-  .header-fade-out {
-    opacity: 0;
-  }
   
   .panels {
     width: 80%;

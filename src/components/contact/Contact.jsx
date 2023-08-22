@@ -1,5 +1,5 @@
 import './contact.css'
-import React, { useRef } from 'react';
+import React, { useRef,useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -7,7 +7,27 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
     const form = useRef();
-  
+    const ContactPannel = useRef();
+ 
+    useEffect(()=> {
+      const handleScroll = (e)=> {
+        panelSlideIn();
+      }
+      window.addEventListener('scroll', handleScroll);
+      })
+      
+      
+      const panelSlideIn = function() {
+            
+             
+        const slideInAt = (window.scrollY + window.innerHeight) -  ContactPannel.current.offsetHeight / 4;
+        const panelMidpoint = ContactPannel.current.offsetTop + ContactPannel.current.offsetHeight / 4;
+        console.log("slideinat :",slideInAt,"pannelMidpoint: ", panelMidpoint)
+        if (slideInAt > panelMidpoint) {
+          ContactPannel.current.classList.add('contact-container-fade-out');
+        }
+      
+      }
     const sendEmail = (e) => {
       e.preventDefault();
   
@@ -21,7 +41,7 @@ const Contact = () => {
     };
   
     return (
-   <>
+   <div className='contact-container' ref={ContactPannel}>
    <div className='contact-title'><h2 className="Home-sections-title">Contact us</h2></div>
    <form ref={form} onSubmit={sendEmail}>
         <input name="from_name" type="text" class="feedback-input" placeholder="Name" />
@@ -29,7 +49,7 @@ const Contact = () => {
         <textarea name="message" class="feedback-input" placeholder="Comment"/>
         <button type="submit" value="Send" className='submit' >Send</button>
       </form>
-      </>
+      </div>
     );
   };
 

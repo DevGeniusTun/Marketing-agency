@@ -5,7 +5,15 @@
     font-family: 'Raleway';
     align-items: center;
     justify-content: center;
-  }
+    opacity: 0;
+  transform: translateY(10%);
+  transition: all 1s;
+}
+
+.footer-basic-fade-out {
+opacity: 1;
+transform: translate(0);
+}
   
   .footer-basic ul {
     padding:0;
