@@ -7,6 +7,8 @@ import Testimonials from '../Testimonials/Testimonials'
 import Footer from '../footer/Footer'
 import Contact from '../contact/Contact'
 import Blogs from '../blogs/Blogs'
+
+
 const Home = () => {
   return (
     <div id='home'>
@@ -15,6 +17,7 @@ const Home = () => {
       <Services />
       <Testimonials />
       <Contact/>
+   
       <Footer/>
     </div>
   )
