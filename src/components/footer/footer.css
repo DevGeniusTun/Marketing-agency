@@ -8,6 +8,8 @@
     opacity: 0;
   transform: translateY(10%);
   transition: all 1s;
+  width: 100dvw;
+  overflow-x: hidden;
 }
 
 .footer-basic-fade-out {
