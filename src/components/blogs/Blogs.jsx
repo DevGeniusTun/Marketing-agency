@@ -1,12 +1,13 @@
-import React,{useEffect} from 'react'
+import React,{useEffect, useState} from 'react'
 import { Link } from 'react-router-dom';
 import blogsData from './blogsData';
 import './blogs.css'
 
 const Blogs = () => {
-  
+
   useEffect (()=>{
     window.scrollTo(0, 0);
+  
   },[])
   
 
@@ -14,7 +15,6 @@ const Blogs = () => {
     <div className='blogsC'>
     <div className="blogsTitle">
         <h2 className="Home-sections-title">Our Blogs</h2>
-       
       </div>
     <div className='blogs'>
     {blogsData.map((blog) => 

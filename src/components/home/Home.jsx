@@ -12,13 +12,13 @@ import Blogs from '../blogs/Blogs'
 const Home = () => {
   return (
     <div id='home'>
-      {/* <HomeSection /> 
+      <HomeSection /> 
        <About />
       <Services />
       <Testimonials />
-      <Contact/> */}
-      <Blogs />
-      {/* <Footer/> */}
+      <Contact/>
+   
+      <Footer/>
     </div>
   )
 }

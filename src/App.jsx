@@ -15,8 +15,8 @@ function App() {
     <Route path="/" exact component={Blogs} />
     <Route path="/blog/:id" component={BlogDetail} />
   
-      {/* <Navbar /> */}
-      {/* <Home/> */}
+      {/* <Navbar />
+      <Home/> */}
     {/* <Switch>
       <Route  path='/home'>
         <Home />
