@@ -7,16 +7,17 @@ import { BrowserRouter as Router ,
    import Services from './components/services/Services';
 import Blogs from './components/blogs/Blogs';
 import BlogDetail from './components/blogs/BlogDetails';
+import Advertising from './components/services/advertising/Advertising';
 
 function App() {
   return (
     <Router>
     <div className="App">
-    <Route path="/" exact component={Blogs} />
-    <Route path="/blog/:id" component={BlogDetail} />
-  
-      {/* <Navbar />
-      <Home/> */}
+    {/* <Route path="/" exact component={Blogs} />
+    <Route path="/blog/:id" component={BlogDetail} /> */}
+    <Advertising />
+       {/* <Navbar /> */}
+      {/*<Home/> */}
     {/* <Switch>
       <Route  path='/home'>
         <Home />
