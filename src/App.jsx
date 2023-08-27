@@ -8,6 +8,8 @@ import { BrowserRouter as Router ,
 import Blogs from './components/blogs/Blogs';
 import BlogDetail from './components/blogs/BlogDetails';
 import Advertising from './components/services/advertising/Advertising';
+import Logo from './components/services/logo/Logo';
+import SocialContent from './components/services/socialContent/SocialContent';
 
 function App() {
   return (
@@ -15,9 +17,10 @@ function App() {
     <div className="App">
     {/* <Route path="/" exact component={Blogs} />
     <Route path="/blog/:id" component={BlogDetail} /> */}
-    <Advertising />
-       {/* <Navbar />
-      <Home/> */}
+
+    {/* <Advertising /> */}
+       <Navbar />
+      <Home/>
     {/* <Switch>
       <Route  path='/home'>
         <Home />
