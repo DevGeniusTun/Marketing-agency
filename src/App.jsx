@@ -15,9 +15,9 @@ function App() {
   return (
     <Router>
     <div className="App">
-    {/* <Route path="/" exact component={Blogs} />
-    <Route path="/blog/:id" component={BlogDetail} /> */}
-<Blogs />
+    <Route path="/" exact component={Blogs} />
+    <Route path="/blog/:id" component={BlogDetail} />
+
     {/* <Advertising /> */}
        {/* <Navbar />
       <Home/> */}
