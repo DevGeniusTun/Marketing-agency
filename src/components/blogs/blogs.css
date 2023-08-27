@@ -191,7 +191,18 @@
     }
 }
 
-
+.lastblogs-container{
+    opacity: 0;
+    width: 100dvw;
+    overflow-x: hidden;
+    transform: translateY(15%);
+    transition: all 3s;
+  }
+  
+.blogs-container-fade-out{
+    opacity: 1;
+transform: translate(0);
+}
 
 .allblogs {
     text-align: center;
