@@ -191,3 +191,17 @@
     }
 }
 
+
+
+.allblogs {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    background-color: #068FFF;
+    width: fit-content;
+    color: white;
+    cursor: pointer;
+    
+}
