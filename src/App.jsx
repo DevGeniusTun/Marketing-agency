@@ -10,17 +10,17 @@ import BlogDetail from './components/blogs/BlogDetails';
 import Advertising from './components/services/advertising/Advertising';
 import Logo from './components/services/logo/Logo';
 import SocialContent from './components/services/socialContent/SocialContent';
-
+import Reserve from './components/services/Reserve/Reserve';
 function App() {
   return (
     <Router>
     <div className="App">
     {/* <Route path="/" exact component={Blogs} />
     <Route path="/blog/:id" component={BlogDetail} /> */}
-
+<Reserve />
     {/* <Advertising /> */}
-       <Navbar />
-      <Home/>
+       {/* <Navbar />
+      <Home/> */}
     {/* <Switch>
       <Route  path='/home'>
         <Home />
