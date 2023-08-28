@@ -70,6 +70,13 @@
     margin-bottom: 20px;
     border-radius: 3px;
     margin-right: -12px;
+
+}
+
+.blogButton:hover {
+    background-color: rgba(184, 182, 182, 0.961);
+    color: rgb(0, 0, 0);
+
 }
 
 .blogButton:hover {
@@ -166,6 +173,7 @@
         font-size: 70%;
     }
 }
+
 
 .lastblogs-container{
     opacity: 0;
@@ -313,3 +321,4 @@ font-size: 16px;
     font-size: 16px;
 }
    }
+
