@@ -87,9 +87,9 @@ const Navbar = ({ isToggle, toggle ,funcMode,dark}) => {
             </button>
           </li>
           <li className="navbar-items">
-            <button>
+         <button >  <a href="/#contact" >
               {isToggle ? "Work with us" : "collaborer avec nous"}
-            </button>
+              </a>   </button>
           </li>
           <label for="theme" className="theme">
             <span class="theme__toggle-wrap" >

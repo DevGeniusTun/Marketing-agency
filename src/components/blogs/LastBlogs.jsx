@@ -42,7 +42,7 @@ const LastBlogs = ({isToggle,dark}) => {
             <div className={!dark ? 'blogTitle': 'blogTitle dark'}>{blog.title}</div>
             
             <p className={!dark ?'blogDescription':'blogDescription dark'}>{blog.description.slice(0, 200)}...</p>
-            <Link to={`/blog/${blog.id}`} ><a  className='blogButton'>{isToggle? 'More':'Plus'}</a></Link>
+            <a href={`/blog/${blog.id}`} ><div  className='blogButton' onclick={()=> window.location.reload()}>{isToggle? 'More':'Plus'}</div></a>
         </div>
     )}
     </div>
