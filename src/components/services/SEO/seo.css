@@ -37,17 +37,20 @@
     box-shadow: 15px 51px 45px -35px rgba(0, 0, 0, 0.2);
 }
 
+.seo-section2 {
+    box-shadow: none;
+}
 .seo-section2.div {
     width: 40%;
     
 }
 
-.seo-section1::after,.seo-section2:after {
+.seo-section1::after {
     content: "";
     position: absolute;
     width: 30%;
-    height: 50px;
-    background-color: #068fff79;
+    height: 40px;
+    background-color: #068fffa5;
     top: 0;
     right: 0;
     left: 0;
