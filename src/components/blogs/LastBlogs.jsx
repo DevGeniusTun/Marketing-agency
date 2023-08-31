@@ -5,7 +5,7 @@ import blogsData from './blogsData';
 import { Link } from 'react-router-dom';
 
 
-const LastBlogs = ({isToggle}) => {
+const LastBlogs = ({isToggle,dark}) => {
 
   const BlgosPannel = useRef();
   const [lastBlogsData, setLastBlogsData] =useState(blogsData.reverse().splice(2))
@@ -33,7 +33,7 @@ const LastBlogs = ({isToggle}) => {
   return (
     <div className='lastblogs-container' ref={BlgosPannel}> <div className='blogsC'>
     <div className="blogsTitle">
-        <h2 className="Home-sections-title">{isToggle?'Latest Articles in Digital World' :'Derniers articles dans le monde numérique'}</h2>
+        <h2 className={!dark ? "Home-sections-title": "Home-sections-title dark"}>{isToggle?'Latest Articles in Digital World' :'Derniers articles dans le monde numérique'}</h2>
       </div>
     <div className='blogs'>
     {blogsData.map((blog) => 

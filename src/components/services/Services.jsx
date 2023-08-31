@@ -5,7 +5,7 @@ import socialMediaImg from "../../images/content.png";
 import websiteImg from "../../images/internet.png";
 import logoDesignImg from "../../images/logo-design.png";
 
-const Services = ({ isToggle }) => {
+const Services = ({ isToggle,dark }) => {
 
 
   const ServicesPannel = useRef();
@@ -34,8 +34,8 @@ const Services = ({ isToggle }) => {
 
   return (
     <div className="sevices" ref={ServicesPannel}>
-      <div className="servicesTitle">
-        <h2 className="Home-sections-title">{isToggle ? 'Our Services':'nos services'}</h2>
+      <div className={!dark ? "servicesTitle" : "servicesTitle dark"}>
+        <h2 className={!dark ? "Home-sections-title" :"Home-sections-title dark"}>{isToggle ? 'Our Services':'nos services'}</h2>
        
       </div>
 
