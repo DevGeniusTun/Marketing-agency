@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import logo from "../../images/logo.png";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 const Navbar = ({ isToggle, toggle ,funcMode,dark}) => {
 
 
@@ -22,14 +23,14 @@ const Navbar = ({ isToggle, toggle ,funcMode,dark}) => {
               : "navbar-items-container "
           }
         >
-          <img
+          <Link to="/"><img
             className={sidebar ? "navbar-logo active" : "navbar-logo"}
             src={logo}
-          ></img>
+          ></img></Link>
           <li className="navbar-items">
             <a
               className={activated[0]}
-              href="home"
+              href="/#About"
               onClick={() => setActivated(["active", "", "", "", ""])}
             >
               <i className="uil  uil-question-circle nav__icon"></i>
@@ -39,7 +40,7 @@ const Navbar = ({ isToggle, toggle ,funcMode,dark}) => {
           <li className="navbar-items">
             <a
               className={activated[1]}
-              href="#services"
+              href="/#services"
               onClick={() => setActivated(["", "active", "", "", "", "", ""])}
             >
               {" "}
@@ -50,7 +51,7 @@ const Navbar = ({ isToggle, toggle ,funcMode,dark}) => {
           <li className="navbar-items">
             <a
               className={activated[2]}
-              href="#work"
+              href="/Blogs"
               onClick={() => setActivated(["", "", "active", "", "", "", ""])}
             >
               {" "}
@@ -61,7 +62,7 @@ const Navbar = ({ isToggle, toggle ,funcMode,dark}) => {
           <li className="navbar-items">
             <a
               className={activated[3]}
-              href="#work"
+              href="/Ads"
               onClick={() => setActivated(["", "", "", "active", "", "", ""])}
             >
               {" "}

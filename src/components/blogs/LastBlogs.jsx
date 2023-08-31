@@ -37,17 +37,19 @@ const LastBlogs = ({isToggle,dark}) => {
       </div>
     <div className='blogs'>
     {blogsData.map((blog) => 
-        <div key={blog.id} className='blog'>
+        <div key={blog.id} className={!dark ? 'blog' :'blog dark'}>
             <img src={blog.image} alt={blog.title} className='blogImg'/>
-            <div className='blogTitle'>{blog.title}</div>
+            <div className={!dark ? 'blogTitle': 'blogTitle dark'}>{blog.title}</div>
             
-            <p className='blogDescription'>{blog.description.slice(0, 200)}...</p>
+            <p className={!dark ?'blogDescription':'blogDescription dark'}>{blog.description.slice(0, 200)}...</p>
             <Link to={`/blog/${blog.id}`} ><a  className='blogButton'>{isToggle? 'More':'Plus'}</a></Link>
         </div>
     )}
     </div>
     </div>
-    <Link to={`/blog`} ><div className="allblogs"> {isToggle?'See all articles':'Voir tous les articles'}</div></Link> 
+    <a href={`/Blogs`} ><div onclick={()=> window.location.reload()
+
+    } className="allblogs"> {isToggle?'See all articles':'Voir tous les articles'}</div></a> 
     </div>
   )
 }

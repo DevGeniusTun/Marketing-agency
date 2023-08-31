@@ -31,7 +31,7 @@ const About = ({ isToggle ,dark}) => {
 
 
   return (
-<div>
+<div id='About'>
 <div className={!dark ?'About-title' :'About-title dark'}><h2 className="Home-sections-title">{isToggle? 'Who we are ?':'Qui sommes-nous?'}</h2></div>
     <div className="grid-container" ref={AboutPannel}>
 

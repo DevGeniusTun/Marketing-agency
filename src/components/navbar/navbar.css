@@ -51,6 +51,14 @@
     display: inline-block;
 }
 
+.navbar-items.nav2 a {
+color: black;
+}
+
+.navbar-items.nav2.dark a {
+  color: rgb(244, 243, 243);
+  }
+
 .navbar-button-link::after,
 .navbar-button-link:hover::after,
 .navbar-button-link.active::after {
@@ -84,6 +92,7 @@
 /* logo */
 .navbar-logo {
     margin-left: 01rem;
+    top: 12px;
     position: absolute;
     width: auto;
     height: 70%;
@@ -135,8 +144,18 @@
 }
 
 /* BREAK POINTS */
+@media screen and (max-width: 1400px)  {
+  .navbar-main-container,
+.navbarServ-main-container {
+    width: 100dvw;
+}
 
-@media screen and (max-width: 1000px) {
+}
+
+@media screen and (max-width: 1300px) {
+  .navbar-items.nav2 a {
+    color: rgb(250, 249, 249);
+    }
     .navbar-items button {
         display: none;
     }
