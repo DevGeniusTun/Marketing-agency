@@ -13,7 +13,9 @@ import SocialContent from "./components/services/socialContent/SocialContent";
 import Reserve from "./components/services/Reserve/Reserve";
 import Seo from "../src/components/services/SEO/Seo.jsx";
 import Navbar2 from "./components/navbar/Navbar2";
+
 import Web from "./components/services/web/Web";
+
 
 function App() {
   const [isToggle, setIsToggle] = useState(false);
@@ -97,6 +99,7 @@ function App() {
         </Route>
 
 
+
         <Route path="/Web" > 
          <Navbar2  isToggle={isToggle}
           toggle={toggle}
@@ -104,6 +107,7 @@ function App() {
           dark={dark} />
         <Web dark={dark}/>
         </Route>
+
         </Switch>
       </div>
     </Router>
