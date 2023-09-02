@@ -4,7 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import "./reserve.css";
 
-const Reserve = () => {
+const Reserve = ({dark, isToggle}) => {
     const form = useRef();
 
  
@@ -25,15 +25,15 @@ const Reserve = () => {
     };
   
     return (
-   <div className='contact-container reserve' >
-   <div className='contact-title'><h2 className="Home-sections-title">Let's Have a conversation</h2></div>
+   <div className={!dark ? 'contact-container reserve':'contact-container reserve dark'} >
+   <div className='contact-title'><h2 className={!dark ? "Home-sections-title":"Home-sections-title dark"}>{isToggle?'Let\'s Have a conversation':'Ayons une conversation'}</h2></div>
    <form ref={form} onSubmit={sendEmail}>
-        <input name="from_name" type="text" className="feedback-input" placeholder="Name" />
+        <input name="from_name" type="text" className="feedback-input" placeholder={isToggle?'Name':'Nom'} />
         <input type="email" name="user_email" className="feedback-input" placeholder="Email"/>
         <input type="text" name="user_service" className="feedback-input" value={"Logo Design: 1logo , 2 weeks"}/>
-        <input type="text" name="user_number" className="feedback-input" placeholder="Phone number"/>
-        <textarea name="message" className="feedback-input" placeholder="Comment"/>
-        <button type="submit" value="Send" className='submit' >Send</button>
+        <input type="text" name="user_number" className="feedback-input" placeholder={isToggle?'Phone Number':'Numéro De Téléphone'}/>
+        <textarea name="message" className="feedback-input" placeholder={isToggle?'Comment':'Commentaire'}/>
+        <button type="submit" value="Send" className='submit' >{isToggle?'Send':'Envoyer'}</button>
       </form>
       </div>
     );

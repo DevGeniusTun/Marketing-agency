@@ -6,7 +6,8 @@ import twitter from "../../../images/twitter.png"
 import facebook from "../../../images/facebook.png"
 import instagram from "../../../images/instagram.png"
 import tiktok from "../../../images/tik-tok.png"
-const Logo = () => {
+
+const Logo = ({dark, isToggle}) => {
     const [views , setViews] = useState([1,50])
     const [price , setPrice] = useState(150)
     const [days, setDays] = useState([2,3])
@@ -44,12 +45,12 @@ const Logo = () => {
      }
   return (
     <div className='ads-container'>
-        <div className="ads-title">
-        Make your own logo 
+        <div className={!dark ? "ads-title":"ads-title dark"}>
+        {isToggle?'Make your own logo':'Créez votre propre logo'} 
         </div>
-        <div className="ads-card-container">
+        <div className={!dark ? "ads-card-container":"ads-card-container dark"}>
             <div className="ads-card-title logo">
-                custumise your offer
+                {isToggle?'custumise your offer':'Personnalisez votre offre'}
                 <div className="ads-card-circle1 logo"></div>
                 <div className="ads-card-circle2 logo"></div>
                 <div className="ads-card-circle3 logo"></div>
@@ -65,11 +66,11 @@ const Logo = () => {
             <div className='ads-card-option1 logo'>{views[0]} Logo
             <img src={plus} onClick={()=>viewsCounter()}></img>
             </div>
-            <div className='ads-card-option1 logo'>{days[0]} Weeks
+            <div className='ads-card-option1 logo'>{days[0]} {isToggle?'Weeks':'Semaines'}
             <img src={minus} onClick={()=>daysCounter()}></img>
             </div>
-            <div className='ads-card-option1 logo'>unlimited revesion</div>
-            <button className="ads-card-reserve logo" >Reserve</button>
+            <div className='ads-card-option1 logo'>{isToggle?'unlimited revesion':'Revésion illimitée'}</div>
+            <a href={`/Reserve/${"logo"}`}>  <button className={!dark ? "ads-card-reserve logo":"ads-card-reserve logo dark"} >{isToggle?'Reserve':'Reserver'}</button> </a>
 
         <div className="social-media">
         <img src={facebook} alt='facebook' title='facebook'/>
