@@ -21,7 +21,9 @@ const Web = ({dark, isToggle}) => {
 				<li>{isToggle?'UI/UX Design':'UI/UX Design'}</li>
 				<li>{isToggle?'3 to 4 pages':'3 à 4 pages'}</li>
 			</ul>
-      <a href={`/Reserve/${"logo"}`} ><div className="web-button">{isToggle? 'Reserve':'Réserve'}</div></a>		
+
+      <a href={`/Reserve/${"Landing page"}`} ><div className="web-button">{isToggle? 'Reserve':'Réserve'}</div></a>		
+
 		</div>
 
 		<div class="grid-1-5">
@@ -34,7 +36,9 @@ const Web = ({dark, isToggle}) => {
 				<li>{isToggle?'6 to 8 pages':'6 à 8 pages'}</li>
         <li>{isToggle?'Advanced features':'Fonctionnalités avancées'}</li>
 			</ul>		
-      <a href={`/Reserve/${"logo"}`} ><div className="web-button">{isToggle? 'Reserve':'Réserve'}</div></a>		
+
+      <a href={`/Reserve/${"Advanced landing page"}`} ><div className="web-button">{isToggle? 'Reserve':'Réserve'}</div></a>		
+
 		</div>
     
 		<div class="grid-1-5">
@@ -48,7 +52,9 @@ const Web = ({dark, isToggle}) => {
         <li>{isToggle?'Admin Dashboard':'Tableau de bord administrateur'}</li>
         <li>{isToggle?'Advanced features':'Fonctionnalités avancées'}</li>
 			</ul>		
-			<a href={`/Reserve/${"logo"}`} ><div className="web-button">{isToggle? 'Reserve':'Réserve'}</div></a>		
+
+			<a href={`/Reserve/${"E-Commerce website"}`} ><div className="web-button">{isToggle? 'Reserve':'Réserve'}</div></a>		
+
 		</div>
 		
 		

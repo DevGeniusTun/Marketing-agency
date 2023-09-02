@@ -69,8 +69,10 @@ const Logo = ({dark, isToggle}) => {
             <div className='ads-card-option1 logo'>{days[0]} {isToggle?'Weeks':'Semaines'}
             <img src={minus} onClick={()=>daysCounter()}></img>
             </div>
+
             <div className='ads-card-option1 logo'>{isToggle?'unlimited revesion':'Revésion illimitée'}</div>
-            <a href={`/Reserve/${"logo"}`}>  <button className={!dark ? "ads-card-reserve logo":"ads-card-reserve logo dark"} >{isToggle?'Reserve':'Reserver'}</button> </a>
+             <a href={`/Reserve/Logo Design: ${views[0]}Logo,${days[0]} Weeks`}>  <button className={!dark ? "ads-card-reserve logo":"ads-card-reserve logo dark"} >{isToggle?'Reserve':'Reserver'}</butto
+
 
         <div className="social-media">
         <img src={facebook} alt='facebook' title='facebook'/>

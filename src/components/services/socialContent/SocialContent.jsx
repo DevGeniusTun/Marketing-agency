@@ -68,8 +68,10 @@ const SocialContent = ({dark, isToggle}) => {
             <div className='ads-card-option1 logo'>{days[0]} {isToggle?'Weeks':'Semaines'}
             <img src={plus} onClick={()=>daysCounter()}></img>
             </div>
+
             <div className='ads-card-option1 logo'>{isToggle?'Content creation':'Création de contenu'}</div>
-            <a href={`/Reserve/${"logo"}`}>  <button className={!dark ? "ads-card-reserve logo ":"ads-card-reserve dark"} >{isToggle?'Reserve':'Réserver'}</button> </a>
+ <a href={`/Reserve/Content creation: ${views[0]} Posts,${days[0]} Weeks`}>  <button className={!dark ? "ads-card-reserve logo ":"ads-card-reserve dark"} >{isToggle?'Reserve':'Réserver'}</button> </a>
+
 
         <div className="social-media">
         <img src={facebook} alt='facebook' title='facebook'/>
